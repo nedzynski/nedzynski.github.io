@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://nedzynski.github.io/sitemap.xml 
+Sitemap: http://nedzynski.me/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Piotr Nedzynski]]></title>
-  <link href="http://nedzynski.github.io/atom.xml" rel="self"/>
-  <link href="http://nedzynski.github.io/"/>
-  <updated>2014-01-04T22:58:11+01:00</updated>
-  <id>http://nedzynski.github.io/</id>
+  <link href="http://nedzynski.me/atom.xml" rel="self"/>
+  <link href="http://nedzynski.me/"/>
+  <updated>2014-01-04T23:10:06+01:00</updated>
+  <id>http://nedzynski.me/</id>
   <author>
     <name><![CDATA[Piotr Nedzynski]]></name>
     
@@ -15,15 +15,15 @@
   
   <entry>
     <title type="html"><![CDATA[Measuring against yourself]]></title>
-    <link href="http://nedzynski.github.io/blog/2012/03/measuring-against-yourself/"/>
+    <link href="http://nedzynski.me/blog/2012/03/measuring-against-yourself/"/>
     <updated>2012-03-04T21:39:27+01:00</updated>
-    <id>http://nedzynski.github.io/blog/2012/03/measuring-against-yourself</id>
+    <id>http://nedzynski.me/blog/2012/03/measuring-against-yourself</id>
     <content type="html"><![CDATA[<p>Hackers often obsess about how to write great code &ndash; code that is readable, performs well, is easy to maintain or meets other specific expectations. If you get a group of hackers in a room and it so happens that this is not the topic of their discussion then they most likely talk about productivity &ndash; about how to build software quickly and efficiently, how to type fast, which development environment to choose, which programming language makes them more productive, etc.</p>
 
 <!-- more -->
 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="http://nedzynski.github.io/images/road_to_nowhere.jpg" /></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="http://nedzynski.me/images/road_to_nowhere.jpg" /></p>
 
 <p>This is really great. That’s what hackers are supposed to do. It’s a tremendously important aspect of the art of creating software. Sometimes it really does boil down to how fast you can get the job done. What surprisingly few of us realize is that the single most inefficient thing to do is to write code that brings no value to your project.</p>
 
