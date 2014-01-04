@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Nedzynski - thoughts and ideas]]></title>
+  <title><![CDATA[Piotr Nedzynski]]></title>
   <link href="http://nedzynski.github.io/atom.xml" rel="self"/>
   <link href="http://nedzynski.github.io/"/>
-  <updated>2014-01-04T16:39:13+01:00</updated>
+  <updated>2014-01-04T21:14:59+01:00</updated>
   <id>http://nedzynski.github.io/</id>
   <author>
     <name><![CDATA[Piotr Nedzynski]]></name>
