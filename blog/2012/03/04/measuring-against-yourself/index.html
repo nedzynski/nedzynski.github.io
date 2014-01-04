@@ -1,0 +1,303 @@
+
+
+<!doctype html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Measuring against yourself - Piotr Nedzynski</title>
+    <meta name="author" content="Piotr Nedzynski">
+    
+    <meta name="description" content="Measuring against yourself Mar 4th, 2012 Comments Hackers often obsess about how to write great code &ndash; code that is readable, performs well, &hellip;">
+    
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="canonical" href="http://nedzynski.github.io/blog/2012/03/04/measuring-against-yourself">
+    <link href="/favicon.png" rel="icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+    <link href="//atom.xml" rel="alternate" title="Piotr Nedzynski" type="application/atom+xml">
+  </head>
+
+
+  <body >
+
+    <header>
+      <div class="grid-wrapper">
+  <div class="grid">
+
+    <div class="grid__item two-fifths lap-four-sixths palm-one-whole">
+  <a href="/" class="site-title">Piotr Nedzynski</a>
+  <p class="subtitle">Thoughts and learnings</p>
+</div>
+
+<div class="grid__item three-fifths lap-two-sixths palm-one-whole">
+  <nav>
+    <input type="checkbox" id="toggle">
+<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
+<ul class="menu pull-right">
+  <!-- <li><a href="/">Home</a></li> -->
+  <!-- <li><a href="/blog/">Blog</a></li> -->
+</ul>
+  </nav>
+</div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+    <div class="grid-wrapper">
+      <div class="grid grid-center">
+        
+        <div class="grid__item two-thirds lap-one-whole palm-one-whole">
+        
+
+          <article class="post">
+  <header>
+  
+  <h1 class="title indent">Measuring against yourself</h1>
+  
+
+  
+  <div class="meta clearfix">
+    
+
+
+
+
+
+
+
+
+  
+
+
+<time class="pull-left" datetime="2012-03-04T21:39:27+01:00" pubdate data-updated="true"><i class="icon-calendar"></i> Mar 4<span>th</span>, 2012</time>
+    
+
+
+
+  
+
+    
+      <a class="pull-right" href="#disqus_thread">
+        Comments <i class="icon-comment"></i>
+      </a>
+    
+  </div>
+  
+</header>
+
+
+
+
+  <p>Hackers often obsess about how to write great code &ndash; code that is readable, performs well, is easy to maintain or meets other specific expectations. If you get a group of hackers in a room and it so happens that this is not the topic of their discussion then they most likely talk about productivity &ndash; about how to build software quickly and efficiently, how to type fast, which development environment to choose, which programming language makes them more productive, etc.</p>
+
+<!-- more -->
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="/images/road_to_nowhere.jpg" /></p>
+
+<p>This is really great. That’s what hackers are supposed to do. It’s a tremendously important aspect of the art of creating software. Sometimes it really does boil down to how fast you can get the job done. What surprisingly few of us realize is that the single most inefficient thing to do is to write code that brings no value to your project.</p>
+
+<p>I’ve seen it happen over and over again. You set out to build something only to realize that hardly anybody is ever using it or that it has no effect on your users. Sure, it’s there and it works but it doesn’t <strong>DO</strong> anything that your users actually need. In those cases you may as well write:</p>
+
+<div><script src='https://gist.github.com/2165107.js'></script>
+<noscript><pre><code>function doNothing() {
+    return null;
+}
+doNothing();</code></pre></noscript></div>
+
+
+<p>It will accomplish pretty much the same and it doesn’t really get more readable and efficient than that.
+Productivity is a pretty peculiar thing. You may be working like crazy &ndash; write lines after lines of code and yet accomplish absolutely nothing. In startups, when the team is small and time is always short, it can literally mean the life and death of the company. Deciding what to code is among the most important decisions you have to make. Period.</p>
+
+<p>Building stuff for the sake of the activity alone may be fun but it doesn’t get you very far in business. It kills you. But how do you know if whatever you’re building gets you closer to your goal? Well, there’s an old management adage that goes like this:</p>
+
+<blockquote><p>You Can&#8217;t Manage What You Don&#8217;t Measure</p></blockquote>
+
+
+<p>How do you measure whether your new, shiny feature gives you better user retention, increases your conversion rates or achieves any other goal you’ve set out to achieve with it? Sure, it’s fairly easy to measure if your users are using it but it still doesn’t tell you what its impact is on set goals. The problem is that when you see a change in your metrics, you don’t really know what caused it. It could be the recently introduced feature, but it could as well be the article on <a href="techcrunch.com">TechCrunch</a> that ran 2 months prior and incidentally turned into a flamewar on <a href="reddit.com">reddit</a> a day before. The problem is that you can never test things in complete isolation.</p>
+
+<p>So are we completely doomed to imagine things and guess what will work and how?
+That’s what I thought until I read <a href="http://www.amazon.com/s/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;field-keywords=freakonomics&amp;linkCode=ur2&amp;sprefix=freakono%2Caps%2C283&amp;tag=nedzynski-20&amp;url=search-alias%3Daps">Freakonomics</a> some years ago. It turns out that there is a class of problems that are seemingly immeasurable but in fact can be measured with high degree of probability. Here’s an excerpt from the book:</p>
+
+<blockquote><p>Of all the truisms about politics, one is held to be truer than the rest: money buys elections. (&#8230;) Indeed, election data show it is true that the candidate who spends more money in a campaign usually wins. But is money the cause of the victory? (&#8230;) Picture two candidates, one intrinsically appealing and the other not so. The appealing candidate raises much more money and wins easily. But was it the money that won him the votes, or was it his appeal that won the votes and the money? That’s a crucial question but a very hard one to answer. Voter appeal, after all, isn’t easy to quantify. How can it be measured?</p><p>It can’t, really—except in one special case. The key is to measure a candidate against… himself. That is, Candidate A today is likely to be similar to Candidate A two or four years hence. The same could be said for Candidate B. If only Candidate A ran against Candidate B in two consecutive elections but in each case spent different amounts of money. Then, with the candidates’ appeal more or less constant, we could measure the money’s impact. (&#8230;)</p><p>Here’s the surprise: the amount of money spent by the candidates hardly matters at all. A winning candidate can cut his spending in half and lose only 1% of the vote. Meanwhile, a losing candidate who doubles his spending can expect to shift the vote in his favor by only that same 1%. (&#8230;) Some politicians are inherently attractive to voters and others simply aren’t, and no amount of money can do much about it.</p><footer><strong>[Steven D. Levitt and Stephen J. Dubner</strong> <cite><a href='http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=freakonomics&linkCode=ur2&sprefix=freakono%2Caps%2C283&tag=nedzynski-20&url=search-alias%3Daps'>Freakonomics]</a></cite></footer></blockquote>
+
+
+<p>This short example really opened up a few doors in my head. To this day I find the concept of measuring something in relation to the same thing in different circumstances to be pretty cool. The idea of A/B testing has been around for quite some time but I wasn’t sure how to apply this to software development for quite a while&hellip;
+<span class='pullquote-right' data-pullquote='It’s a pretty simple concept and yet in many cases this approach can make all the difference.'>
+So how does this approach translate into our decision-making process regarding which features to cut and which ones to double down on?</p>
+
+<p>It turns out that all it takes is having the capability to deploy a particular functionality to a select group of your users and to measure the impact of the change in comparison to similar reference group without that feature. It’s a pretty simple concept and yet in many cases this approach can make all the difference. This way you could clearly determine that for example: &lsquo;displaying cute kitten images on logout&rsquo; makes your users 5% more likely to convert to paying customers within a week. Pretty neat, right?
+</span></p>
+
+<p>This is why I love <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F0307887898%2Fref%3Das_li_qf_sp_asin_il_tl%3Fie%3DUTF8%26tag%3Dnedzynski-20%26linkCode%3Das2%26camp%3D1789%26creative%3D9325%26creativeASIN%3D0307887898&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGou3F72ifIdMzfPalUN_0vAv824A">Lean Startup</a> so much. It is essentially a framework that gives you a clear formula on how to build your product and your business based on the idea of comparative measurement. Yes, it’s quite an overhead to build the framework for partial deployments, for gathering user data and computing metrics but without it you’re blind &ndash; you’re just playing a guesswork game. Can your business afford it?</p>
+
+
+</article>
+
+ 
+<section id="disqus">
+  <h1 class="indent title">Comments</h1>
+  <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+        
+        </div>
+        
+        
+        <aside id="sidebar" class="grid__item one-third lap-one-whole palm-one-whole">
+          <div class="grid">
+
+  <section id="about" class="aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">About</h1>
+  <p>Welcome!<br/>
+  I'm Piotr Nedzynski - your host at this blog.</p>
+  <p>I work at <a target="_blank" href="//getbase.com">Base</a> where we <a target="_blank" href="//getbase.com/imagine">redefine</a> the way companies use software to manage their businesses. I'm also the co-founder and organizer of <a target="_blank" href="//hive53.com">Hive53</a> - a virtual hive that unites startup and enterpreneurship enthusiasts in beautiful Krakow and <a target="_blank" href="//joinhive.com">other cities</a>.</p>
+  <p>This blog is where I formulate and share my learnings - both profesional and personal.</p>
+</section>
+
+
+  
+<section class="social aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">
+    Social
+  </h1>
+  <ul class="unstyled">
+    
+    
+    <li><a class="github" href="//github.com/nedzynski"><i class="icon-github"></i> Github</a></li>
+    <li><a class="facebook" href="//facebook.com/piotr.nedzynski"><i class="icon-facebook-sign"></i> Facebook</a></li>
+    
+    <li><a class="linkedin" href="//linkedin.com/in/pl.linkedin.com/in/nedzynski/"><i class="icon-linkedin-sign"></i> LinkedIn</a></li>
+    
+    
+    <li><a class="twitter" href="//twitter.com/nedzynski"><i class="icon-twitter"></i> Twitter</a></li>
+    
+  </ul>
+</section>
+
+
+  <section id="recent-posts" class="aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">Recent Posts</h1>
+  <ul class="divided">
+    
+      <li class="post">
+        <a href="/blog/2012/03/04/measuring-against-yourself/">Measuring against yourself</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section id="github-repos" class="aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">
+    GitHub Repos
+    
+    <small class="pull-right">
+      <a class="btn" href="//github.com/nedzynski" title="@nedzynski on GitHub" target="_blank">
+        <i class="icon-external-link"></i>
+      </a>
+    </small>
+    
+  </h1>
+  <ul id="gh_repos" class="divided">
+    <li class="loading">
+      <i class="icon-spinner icon-spin"></i>
+    </li>
+  </ul>
+</section>
+
+
+
+
+</div>
+
+        </aside>
+        
+      </div>
+    </div>
+    
+    <footer>
+      <div class="grid-wrapper">
+  <div class="grid">
+    <div class="grid__item">
+      <p class="copyright">
+  All content by Piotr Nedzynski and licensed under <a href="//creativecommons.org/licenses/by-nc-sa/3.0/ie/">Creative Commons</a>.<br>
+  Powered by <a href="//octopress.org/">Octopress</a>. Theme <a href="//github.com/coogie/oscailte">Oscailte</a> by Stephen Coogan.
+</p>
+    </div>
+  </div>
+</div>
+
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script defer src="/javascripts/octopress.js"></script>
+
+
+<script>
+  var _gaq=[['_setAccount','UA-29963822-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
+
+<script>
+  var disqus_shortname = 'nedzynski';
+  
+    
+    // var disqus_developer = 1;
+    var disqus_identifier = 'http://nedzynski.github.io/blog/2012/03/04/measuring-against-yourself/';
+    var disqus_url = 'http://nedzynski.github.io/blog/2012/03/04/measuring-against-yourself/';
+    var disqus_script = 'embed.js';
+  
+  (function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+</script>
+
+
+
+
+<script>
+  $(document).ready(function(){
+    if (!window.jXHR){
+      var jxhr = document.createElement('script');
+      jxhr.type = 'text/javascript';
+      jxhr.src = '/javascripts/libs/jXHR.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jxhr, s);
+    }
+
+    github.showRepos({
+      user: 'nedzynski',
+      count: 0,
+      skip_forks: true,
+      target: '#gh_repos'
+    });
+  });
+</script>
+<script src="/javascripts/github.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
